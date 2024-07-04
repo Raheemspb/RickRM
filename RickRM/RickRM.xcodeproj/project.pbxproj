@@ -18,6 +18,7 @@
 		AA353BB22C36CCA400AA9119 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA353BB12C36CCA400AA9119 /* SnapKit */; };
 		AA353BB42C36CCA400AA9119 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AA353BB32C36CCA400AA9119 /* SnapKit-Dynamic */; };
 		AA353BB62C36CE3600AA9119 /* RMRealmClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA353BB52C36CE3600AA9119 /* RMRealmClass.swift */; };
+		AA353BB82C36CEAE00AA9119 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA353BB72C36CEAE00AA9119 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AA353BA32C36CC4500AA9119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA353BA52C36CC4500AA9119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA353BB52C36CE3600AA9119 /* RMRealmClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMRealmClass.swift; sourceTree = "<group>"; };
+		AA353BB72C36CEAE00AA9119 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				AA353B972C36CC4400AA9119 /* AppDelegate.swift */,
 				AA353B992C36CC4400AA9119 /* SceneDelegate.swift */,
 				AA353B9B2C36CC4400AA9119 /* ViewController.swift */,
+				AA353BB72C36CEAE00AA9119 /* NetworkManager.swift */,
 				AA353BB52C36CE3600AA9119 /* RMRealmClass.swift */,
 				AA353B9D2C36CC4400AA9119 /* Main.storyboard */,
 				AA353BA02C36CC4500AA9119 /* Assets.xcassets */,
@@ -161,6 +164,7 @@
 			files = (
 				AA353B9C2C36CC4400AA9119 /* ViewController.swift in Sources */,
 				AA353B982C36CC4400AA9119 /* AppDelegate.swift in Sources */,
+				AA353BB82C36CEAE00AA9119 /* NetworkManager.swift in Sources */,
 				AA353B9A2C36CC4400AA9119 /* SceneDelegate.swift in Sources */,
 				AA353BB62C36CE3600AA9119 /* RMRealmClass.swift in Sources */,
 			);
