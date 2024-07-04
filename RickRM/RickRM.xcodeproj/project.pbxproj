@@ -13,7 +13,6 @@
 		AA353B9F2C36CC4400AA9119 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA353B9E2C36CC4400AA9119 /* Base */; };
 		AA353BA12C36CC4500AA9119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA353BA02C36CC4500AA9119 /* Assets.xcassets */; };
 		AA353BA42C36CC4500AA9119 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA353BA32C36CC4500AA9119 /* Base */; };
-		AA353BAD2C36CC7A00AA9119 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AA353BAC2C36CC7A00AA9119 /* Realm */; };
 		AA353BAF2C36CC7A00AA9119 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA353BAE2C36CC7A00AA9119 /* RealmSwift */; };
 		AA353BB22C36CCA400AA9119 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA353BB12C36CCA400AA9119 /* SnapKit */; };
 		AA353BB42C36CCA400AA9119 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AA353BB32C36CCA400AA9119 /* SnapKit-Dynamic */; };
@@ -43,7 +42,6 @@
 			files = (
 				AA353BB22C36CCA400AA9119 /* SnapKit in Frameworks */,
 				AA353BAF2C36CC7A00AA9119 /* RealmSwift in Frameworks */,
-				AA353BAD2C36CC7A00AA9119 /* Realm in Frameworks */,
 				AA353BB42C36CCA400AA9119 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +99,6 @@
 			);
 			name = RickRM;
 			packageProductDependencies = (
-				AA353BAC2C36CC7A00AA9119 /* Realm */,
 				AA353BAE2C36CC7A00AA9119 /* RealmSwift */,
 				AA353BB12C36CCA400AA9119 /* SnapKit */,
 				AA353BB32C36CCA400AA9119 /* SnapKit-Dynamic */,
@@ -414,11 +411,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AA353BAC2C36CC7A00AA9119 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AA353BAB2C36CC7A00AA9119 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
 		AA353BAE2C36CC7A00AA9119 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AA353BAB2C36CC7A00AA9119 /* XCRemoteSwiftPackageReference "realm-swift" */;
