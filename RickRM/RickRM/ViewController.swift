@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     let image = UIImageView()
     let networkManager = NetworkManager()
 
-    var characters2: Results<RMRealmClass>{
-        get{return self.networkManager.realm.objects(RMRealmClass.self)}
+    var characters2: Results<RMRealmClass> {
+        return self.networkManager.realm.objects(RMRealmClass.self)
     }
 
     var characters = [Character]()
@@ -44,10 +44,7 @@ class ViewController: UIViewController {
         tableView.snp.makeConstraints { make in
             make.top.bottom.height.width.equalToSuperview()
         }
-
     }
-
-
 }
 
 extension ViewController: UITableViewDataSource {
@@ -57,8 +54,10 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
-
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "cell",
+            for: indexPath
+        ) as? CustomTableViewCell else { return UITableViewCell() }
 
         let character = characters2[indexPath.row]
 
@@ -80,7 +79,4 @@ extension ViewController: UITableViewDataSource {
         }
         return cell
     }
-
-
 }
-

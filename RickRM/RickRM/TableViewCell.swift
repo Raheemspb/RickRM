@@ -67,7 +67,6 @@ class CustomTableViewCell: UITableViewCell {
         speciesAndGenderLabel.text = nil
         originNameLabel.text = nil
         statusLabel.text = nil
-
     }
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -122,7 +121,7 @@ class CustomTableViewCell: UITableViewCell {
         contentView.addSubview(statusLabel)
         contentView.addSubview(watchEpisodesButton)
     }
-
+    // swiftlint:disable:next function_parameter_count
     func configure(imageData: Data, name: String, species: String, gender: String, origin: String, status: String) {
         nameLabel.text = name
         charImage.image = UIImage(data: imageData)

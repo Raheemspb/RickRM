@@ -9,7 +9,6 @@ import Foundation
 import RealmSwift
 
 class RMRealmClass: Object {
-//    @objc dynamic var personIDRealm = Int()
     @objc dynamic var personIDRealm = String()
     @objc dynamic var nameRealm = String()
     @objc dynamic var imageURLRealm = String()

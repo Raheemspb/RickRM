@@ -20,8 +20,6 @@ struct Character: Codable {
     let gender: String
     let status: String
     let origin: Location
-
-
 }
 
 struct Location: Codable {
@@ -29,9 +27,9 @@ struct Location: Codable {
 }
 
 class NetworkManager {
-
+    // swiftlint:disable force_try
     let realm = try! Realm()
-
+    // swiftlint:enable force_try
     let urlString = "https://rickandmortyapi.com/api/character"
 
     func getCharacters(complition: @escaping ([Character]) -> Void) {
@@ -56,7 +54,9 @@ class NetworkManager {
 
                 DispatchQueue.main.async {
                 for character in characters {
+                    // swiftlint:disable force_try
                         try! self.realm.write {
+                            // swiftlint:enable force_try
                             let rmRealm = RMRealmClass()
                             rmRealm.personIDRealm = String(character.id)
                             rmRealm.nameRealm = character.name
@@ -74,7 +74,5 @@ class NetworkManager {
                 print("Error", error.localizedDescription)
             }
         }.resume()
-
     }
-
 }
