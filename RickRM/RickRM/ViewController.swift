@@ -23,6 +23,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(characters2.count)
         setupTableView()
         tableView.rowHeight = 150
 

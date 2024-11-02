@@ -13,12 +13,12 @@
 		AA353B9F2C36CC4400AA9119 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA353B9E2C36CC4400AA9119 /* Base */; };
 		AA353BA12C36CC4500AA9119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA353BA02C36CC4500AA9119 /* Assets.xcassets */; };
 		AA353BA42C36CC4500AA9119 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA353BA32C36CC4500AA9119 /* Base */; };
-		AA353BAF2C36CC7A00AA9119 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA353BAE2C36CC7A00AA9119 /* RealmSwift */; };
-		AA353BB22C36CCA400AA9119 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA353BB12C36CCA400AA9119 /* SnapKit */; };
-		AA353BB42C36CCA400AA9119 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AA353BB32C36CCA400AA9119 /* SnapKit-Dynamic */; };
 		AA353BB62C36CE3600AA9119 /* RMRealmClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA353BB52C36CE3600AA9119 /* RMRealmClass.swift */; };
 		AA353BB82C36CEAE00AA9119 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA353BB72C36CEAE00AA9119 /* NetworkManager.swift */; };
 		AA353BBA2C36CF3500AA9119 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA353BB92C36CF3500AA9119 /* TableViewCell.swift */; };
+		AAE1A6122C4E7DF40040F8D2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AAE1A6112C4E7DF40040F8D2 /* RealmSwift */; };
+		AAE1A6152C4E7E030040F8D2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AAE1A6142C4E7E030040F8D2 /* SnapKit */; };
+		AAE1A6172C4E7E030040F8D2 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = AAE1A6162C4E7E030040F8D2 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,9 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA353BB22C36CCA400AA9119 /* SnapKit in Frameworks */,
-				AA353BAF2C36CC7A00AA9119 /* RealmSwift in Frameworks */,
-				AA353BB42C36CCA400AA9119 /* SnapKit-Dynamic in Frameworks */,
+				AAE1A6152C4E7E030040F8D2 /* SnapKit in Frameworks */,
+				AAE1A6122C4E7DF40040F8D2 /* RealmSwift in Frameworks */,
+				AAE1A6172C4E7E030040F8D2 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,9 +100,9 @@
 			);
 			name = RickRM;
 			packageProductDependencies = (
-				AA353BAE2C36CC7A00AA9119 /* RealmSwift */,
-				AA353BB12C36CCA400AA9119 /* SnapKit */,
-				AA353BB32C36CCA400AA9119 /* SnapKit-Dynamic */,
+				AAE1A6112C4E7DF40040F8D2 /* RealmSwift */,
+				AAE1A6142C4E7E030040F8D2 /* SnapKit */,
+				AAE1A6162C4E7E030040F8D2 /* SnapKit-Dynamic */,
 			);
 			productName = RickRM;
 			productReference = AA353B942C36CC4400AA9119 /* RickRM.app */;
@@ -133,8 +133,8 @@
 			);
 			mainGroup = AA353B8B2C36CC4400AA9119;
 			packageReferences = (
-				AA353BAB2C36CC7A00AA9119 /* XCRemoteSwiftPackageReference "realm-swift" */,
-				AA353BB02C36CCA400AA9119 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AAE1A60E2C4E7DF40040F8D2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				AAE1A6132C4E7E030040F8D2 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = AA353B952C36CC4400AA9119 /* Products */;
 			projectDirPath = "";
@@ -415,7 +415,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AA353BAB2C36CC7A00AA9119 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		AAE1A60E2C4E7DF40040F8D2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift";
 			requirement = {
@@ -423,7 +423,7 @@
 				kind = branch;
 			};
 		};
-		AA353BB02C36CCA400AA9119 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		AAE1A6132C4E7E030040F8D2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
 			requirement = {
@@ -434,19 +434,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AA353BAE2C36CC7A00AA9119 /* RealmSwift */ = {
+		AAE1A6112C4E7DF40040F8D2 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AA353BAB2C36CC7A00AA9119 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = AAE1A60E2C4E7DF40040F8D2 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
-		AA353BB12C36CCA400AA9119 /* SnapKit */ = {
+		AAE1A6142C4E7E030040F8D2 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AA353BB02C36CCA400AA9119 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = AAE1A6132C4E7E030040F8D2 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		AA353BB32C36CCA400AA9119 /* SnapKit-Dynamic */ = {
+		AAE1A6162C4E7E030040F8D2 /* SnapKit-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AA353BB02C36CCA400AA9119 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = AAE1A6132C4E7E030040F8D2 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */

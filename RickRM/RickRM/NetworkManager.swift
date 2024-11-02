@@ -53,8 +53,8 @@ class NetworkManager {
                 print("Good")
 
                 DispatchQueue.main.async {
-                for character in characters {
-                    // swiftlint:disable force_try
+                    for character in characters {
+                        // swiftlint:disable force_try
                         try! self.realm.write {
                             // swiftlint:enable force_try
                             let rmRealm = RMRealmClass()
